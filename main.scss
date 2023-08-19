@@ -4,6 +4,10 @@
 
 html {
   font-size: 94.75%;
+
+  @media (min-width: 40rem) {
+    font-size: 125%;
+  }
 }
 
 body {
@@ -23,6 +27,10 @@ body {
   align-items: center;
   padding: 3rem 0;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    padding: 3rem 0;
+  }
 }
 
 .sass-introduction {
@@ -30,9 +38,13 @@ body {
   background: lighten(map-get($colors, main), 72%);
   padding: $size-default * 2;
   text-align: center;
-  box-shadow: $size-tiny $size-tiny $size-tiny / 2 #ccc;
+  box-shadow: $size-tiny $size-tiny 0.1rem #ccc;
   width: 90%;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    width: 30rem;
+  }
 }
 
 .sass-introduction p {
@@ -47,6 +59,10 @@ body {
   margin: $size-default * 2 0;
   width: 90%;
   box-sizing: border-box;
+
+  @media (min-width: 40rem) {
+    width: 30rem;
+  }
 }
 
 .section-header {
@@ -91,14 +107,6 @@ body {
 }
 
 @media (min-width: 40rem) {
-  html {
-    font-size: 125%;
-  }
-
-  .container {
-    padding: 3rem 0;
-  }
-
   .sass-introduction,
   .sass-details {
     width: 30rem;
