@@ -34,9 +34,9 @@ body {
 .sass-introduction {
   border: $border-default;
   background: lighten(map-get($colors, main), 72%);
-  padding: 2rem;
+  padding: $size-default * 2;
   text-align: center;
-  box-shadow: $size-tiny $size-tiny 0.1rem #ccc;
+  box-shadow: $size-tiny $size-tiny $size-tiny / 2 #ccc;
   width: 90%;
   box-sizing: border-box;
 }
@@ -50,7 +50,7 @@ body {
   background: #fae5ff;
   padding: $size-default;
   text-align: center;
-  margin: 2rem 0;
+  margin: $size-default * 2 0;
   width: 90%;
   box-sizing: border-box;
 }
